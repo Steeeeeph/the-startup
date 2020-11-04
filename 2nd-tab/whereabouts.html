@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact us</title>
+<!-- Style needs to be imported in seperate stylesheet -->
+    <style>
+#googlemap {
+    width: 100%;
+    height: 400px;;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Contact</h1>
+    <q>Dolce far niente...</q>
+    <div id="googleMap">
+    <!-- Google maps API -->
+        <script>
+            function myMap() {
+            var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVuy-xtjkrJ2UxI5g5Q7SaTheRMAd4kyI&callback=myMap"></script>
+    <!-- Bottom contact info -->
+    </div>
+    <div class="location">
+        <h2>Location</h2>
+        <address>
+        Kon. Astridlaan 185 <br>
+        9000 Gent <br>
+        Belgium
+        </address>
+    </div>
+    <div class="phone">
+        <h2>Phone</h2>
+        <p>+32 456 789 012</p>
+    </div>
+    <div class="openinghours">
+        <h2>Opening Hours</h2>
+        <p>Tue-Sun 17:00-11:00</p>
+    </div>
+</body>
+</html>
