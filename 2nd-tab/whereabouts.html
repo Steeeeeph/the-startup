@@ -3,34 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <title>Contact us</title>
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
 <!-- Style needs to be imported in seperate stylesheet -->
     <style>
-#googlemap {
-    width: 100%;
-    height: 400px;;
+.google {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#googleMap {
+    box-shadow: 0 5px 10px lightgray;
+    width: 80vw;
+    height: 400px;
 }
     </style>
+    
+    <title>How can I help you?</title>  
 </head>
 
 <body>
     <h1>Contact</h1>
     <q>Dolce far niente...</q>
-    <div id="googleMap">
-    <!-- Google maps API -->
+    <div class="google" id="googleMap">
+        <!-- Google maps API -->
         <script>
             function myMap() {
             var mapProp= {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:5,
+            center:new google.maps.LatLng(51.0362223,3.7135103),
+            zoom:20,
             };
             var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
             }
+
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVuy-xtjkrJ2UxI5g5Q7SaTheRMAd4kyI&callback=myMap"></script>
+        <!-- Marker on map -->
+        <script>
+            function initMap() {
+            const myLatLng = { lat: 51.0362223, lng: 3.7135103 };
+            const map = new google.maps.Map(document.getElementById("googleMap"), {
+                zoom: 20,
+                center: myLatLng,
+            });
+            new google.maps.Marker({
+                position: myLatLng,
+                map,
+                title: "Hello World!",
+            });
+            }
+
+        </script>
+    </div>   
+    
     <!-- Bottom contact info -->
-    </div>
     <div class="location">
         <h2>Location</h2>
         <address>
