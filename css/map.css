@@ -1,1 +1,22 @@
-h1,h2{font-family:"Paytone One",sans-serif}.google{display:inline-block;justify-content:center}#googleMap{box-shadow:0 5px 10px #d3d3d3;width:80vw;height:400px}.row{margin:0}/*# sourceMappingURL=style.css.map */
+h1, h2 {
+  font-family: 'Paytone One', sans-serif;
+}
+
+.google {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#googleMap {
+  -webkit-box-shadow: 0 5px 10px lightgray;
+          box-shadow: 0 5px 10px lightgray;
+  width: 80vw;
+  height: 400px;
+}
+
+.row {
+  margin: 0;
+}
+/*# sourceMappingURL=map.css.map */

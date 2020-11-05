@@ -2,20 +2,27 @@
 h1, h2 {
     font-family: 'Paytone One', sans-serif;
 }
+q {
+    font-size: x-large;
+    font-style: italic;
+}
 .google {
     display: block;
     justify-content: center;
 }
 #googleMap {
     box-shadow: 0 5px 10px lightgray;
-    width: 80vw;
+    width: 100%;
     height: 400px;
 }
 iframe {
     border:0;
 }
 .row {
-    margin: 0;
+    padding: 0;
+}
+.contact-info {
+    padding: 0;
 }
 .logo-footer {
     height: 10px;

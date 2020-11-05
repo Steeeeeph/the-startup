@@ -13,7 +13,7 @@
     <!-- LESS -->
     <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script src="//cdn.jsdelivr.net/npm/less" ></script> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <title>How can we help you?</title>
 
     <!-- Style needs to be imported in seperate stylesheet -->
@@ -42,7 +42,7 @@
     <div class="container google">
         <div id="googleMap" class="row">
             <!--Google map embed-->
-            <iframe width="inherit" height="400px" frameborder="0" 
+            <iframe width="100%" height="400px" frameborder="0" 
             src="https://www.google.com/maps/embed/v1/search?q=BeCode%20Gent%2C%20Koningin%20Astridlaan%2C%20Ghent%2C%20Belgium&key=AIzaSyDVuy-xtjkrJ2UxI5g5Q7SaTheRMAd4kyI"
             allowfullscreen></iframe>
         </div>
@@ -52,10 +52,11 @@
         <div class="row">
             <div class="location col-sm-4">
                 <h2>Location</h2>
-                <address>
+                <address> <a href="https://goo.gl/maps/UCPWdBFcwCnkvPJc8">
                     Kon. Astridlaan 185 <br>
                     9000 Gent <br>
                     Belgium
+                </a>
                 </address>
             </div>
             <div class="phone col-sm-4">
@@ -72,12 +73,12 @@
     <div class="contact-form container">
         <h2 class="row">Contact Form</h2>
         <form action="mailto:emailadress" target="confirmation" method="POST">
-            <div class="row">
-                <div class="form-group col-6">
+            <div class="form-inline row">
+                <div class="form-group col">
                     <label for="name">What's your name?</label> <br>
                     <input type="text" name="name" id="name" placeholder="John/Jane Doe">
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col">
                     <label for="email">What's your e-mailadress?</label> <br>
                     <input type="text" name="email" id="email" placeholder="e-mail address"> <br>
                 </div>
@@ -94,7 +95,7 @@
         </div>
 
 
-<div class="jumbotron text-center"> <sup> &copy;</sup> <img style="height: 25px" class="logo-footer" src="logosimple.png" alt="BeCouch"> <sub>2020</sub> </div>
+<div class="jumbotron text-center"> <sup> &copy;</sup> <img style="height: 25px" class="logo-footer" src="/images/logo.png" alt="BeCouch"> <sub>2020</sub> </div>
 </body>
 
 </html>
