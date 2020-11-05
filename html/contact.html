@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <!-- fontstyles -->
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet"> 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <!-- LESS -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="//cdn.jsdelivr.net/npm/less" ></script> -->
+    <link rel="stylesheet" href="style.css">
     <title>How can we help you?</title>
 
     <!-- Style needs to be imported in seperate stylesheet -->
-    <style>
+    <!-- <style>
         .google {
             display: flex;
             justify-content: center;
@@ -29,13 +31,7 @@
             height: 400px;
         }
 
-        .contact-info {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -43,34 +39,13 @@
         <h1>Contact</h1>
         <q>Dolce far niente...</q>
     </div>
-    <div class="google">
-        <div id="googleMap">
-            <!--Google map bootstrap-->
-            <iframe width="100%" height="400px" frameborder="0" style="border:0"
+    <div class="container google">
+        <div id="googleMap" class="row">
+            <!--Google map embed-->
+            <iframe width="inherit" height="400px" frameborder="0" 
             src="https://www.google.com/maps/embed/v1/search?q=BeCode%20Gent%2C%20Koningin%20Astridlaan%2C%20Ghent%2C%20Belgium&key=AIzaSyDVuy-xtjkrJ2UxI5g5Q7SaTheRMAd4kyI"
             allowfullscreen></iframe>
         </div>
-                <!-- Google maps API -->
-                <!-- <script>
-                    function myMap() {
-                        var mapProp = {
-                            center: new google.maps.LatLng(51.0362223, 3.7135103),
-                            zoom: 20,
-                        };
-                        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-                        // MARKER NOT WORKING
-                        var marker = new google.maps.Marker({
-                            position: center
-                        });
-
-                        marker.setMap(map);
-                    }
-                </script> -->
-                <!-- callback=createMap -->
-                <!-- <script
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVuy-xtjkrJ2UxI5g5Q7SaTheRMAd4kyI&callback=myMap">
-                </script> -->
     </div>
     <!-- Bottom contact info -->
     <div class="container contact-info">
@@ -92,27 +67,34 @@
                 <p>Tue-Sun 17:00-11:00</p>
             </div>
         </div>
-        <div class="row">
-            <div class="contact-form col-sm-12">
-                <h2>Contact Form</h2>
-                <form action="mailto:emailadress" target="confirmation" method="POST">
-                    <label for="name">What's your name?</label> <br>
-                    <input type="text" name="name" id="name" placeholder="John/Jane Doe"> <br>
-                    
-                    <label for="email">What's your e-mailadress?</label> <br>
-                    <input type="text" name="email" id="email" placeholder="e-mail address"> <br>
-                    
-                    <label for="question">Questions or suggestions</label> <br>
-                    <textarea name="contact-form" id="email-content" cols="auto" rows="10" placeholder="State here your questions or suggestions"></textarea> <br>
-                    
-                    <button>Send</button>
-                </form>
-            </div>
-        </div>
-
     </div>
 
+    <div class="contact-form container">
+        <h2 class="row">Contact Form</h2>
+        <form action="mailto:emailadress" target="confirmation" method="POST">
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="name">What's your name?</label> <br>
+                    <input type="text" name="name" id="name" placeholder="John/Jane Doe">
+                </div>
+                <div class="form-group col-6">
+                    <label for="email">What's your e-mailadress?</label> <br>
+                    <input type="text" name="email" id="email" placeholder="e-mail address"> <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="question">Questions or suggestions</label> <br>
+                    <textarea name="contact-form" id="email-content" cols="100%" rows="10" placeholder="State here your questions or suggestions"></textarea> <br>
+                    <button type="submit" class="btn btn-default">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+        </div>
 
+
+<div class="jumbotron text-center"> <sup> &copy;</sup> <img style="height: 25px" class="logo-footer" src="logosimple.png" alt="BeCouch"> <sub>2020</sub> </div>
 </body>
 
 </html>
