@@ -1,9 +1,16 @@
+.nav-item {
+  padding: 5px 25px 0 0;
+  font-size: large;
+  font-weight: 800;
+}
+
 h1, h2 {
   font-family: 'Paytone One', sans-serif;
 }
 
 q {
-  font-size: x-large;
+  font-family: 'Parisienne', cursive;
+  font-size: 3em;
   font-style: italic;
 }
 
@@ -14,7 +21,7 @@ q {
           justify-content: center;
 }
 
-#googleMap {
+iframe {
   -webkit-box-shadow: 0 5px 10px lightgray;
           box-shadow: 0 5px 10px lightgray;
   width: 100%;
@@ -29,8 +36,20 @@ iframe {
   padding: 0;
 }
 
-.contact-info {
-  padding: 0;
+.container {
+  margin: auto;
+}
+
+label {
+  margin-top: 1.5em;
+}
+
+textarea {
+  width: 100%;
+}
+
+#copyright {
+  margin-top: 20px;
 }
 
 .logo-footer {
