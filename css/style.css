@@ -61,6 +61,3 @@ footer {
 #cart {
   filter: invert(100%);
 }
-
-@media only screen and (max-width: 1800px) {
-}
