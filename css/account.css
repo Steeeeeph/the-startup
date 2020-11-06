@@ -1,0 +1,31 @@
+header,
+body,
+footer {
+    font-family: sans-serif;
+}
+
+.nav-item {
+    padding: 5px 25px 0 0;
+    font-size: large;
+    font-weight: 800;
+}
+
+.jumbotron {
+    height: 300px;
+    width: 800px;
+    /*
+    background: rgba(204, 204, 204, 0.5);
+    */
+    background: none;
+}
+
+.btn {
+    border-radius: 2em;
+}
+
+footer {
+    position: fixed;
+    height: 80px;
+    width: 93%;
+    margin: 0 0 50px 50px;
+}
