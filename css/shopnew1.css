@@ -90,7 +90,7 @@ body {
 }
 
 .food {
-    width: 80%;
+    width: 100%;
     display: flex-row;
     justify-content: center;
     align-items: flex-start;
@@ -106,7 +106,9 @@ body {
 #product {
     margin-top: 80px;
     margin-bottom: 50px;
+    justify-content: space-between;
     text-align: center;
+    
 }
 
 #product span {
@@ -119,6 +121,8 @@ body {
     padding: 0,25px;
     border-radius: 25px;
     margin-bottom: 80px;
+    height: 322px;
+    width: 220px;
 }
 
 .food div.food_tile img {
