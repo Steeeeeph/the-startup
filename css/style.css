@@ -311,7 +311,7 @@ Shop page styling
   color: rgba(38, 29, 86, 0.5);
 }
 
-.btn-danger {
+#product .btn-danger {
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 12px 40px;
   border-radius: 20px;
