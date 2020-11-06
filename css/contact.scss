@@ -9,10 +9,22 @@
 h1, h2 {
     font-family: 'Paytone One', sans-serif;
 }
+h1{
+    font-size: 60px;
+}
+h2 {
+    font-size: 25px;
+}
+h2.row {
+    margin-left: 0;
+}
 q {
     font-family: 'Parisienne', cursive;
     font-size: 3em;
     font-style: italic;
+}
+address, p, label {
+    font-size: 14px;
 }
 .google {
     display: block;
@@ -31,9 +43,10 @@ iframe {
 }
 .container{
     margin: auto;
+    padding-top: 1.5em;
 }
 label {
-    margin-top: 1.5em;
+    margin-right: 10px;
 }
 textarea{
     width: 100%;
