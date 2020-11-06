@@ -4,27 +4,42 @@
   font-weight: 800;
 }
 
-h1,
-h2 {
-  font-family: "Paytone One", sans-serif;
+h1, h4 {
+  font-family: 'Paytone One', sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h4.row {
+  margin-left: 0;
 }
 
 q {
-  font-family: "Parisienne", cursive;
+  font-family: 'Parisienne', cursive;
   font-size: 3em;
   font-style: italic;
+}
+
+address, p, label {
+  font-size: 14px;
 }
 
 .google {
   display: block;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 iframe {
   -webkit-box-shadow: 0 5px 10px lightgray;
-  box-shadow: 0 5px 10px lightgray;
+          box-shadow: 0 5px 10px lightgray;
   width: 100%;
   height: 400px;
 }
@@ -39,10 +54,12 @@ iframe {
 
 .container {
   margin: auto;
+  padding-top: 1.5em;
 }
 
 label {
-  margin-top: 1.5em;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 textarea {
@@ -57,15 +74,4 @@ textarea {
   height: 10px;
   width: auto;
 }
-
-.nav-item {
-  padding: 5px 25px 0 0;
-  font-size: large;
-  font-weight: 800;
-}
-
-.logos {
-  margin: 0 10px 10px 0;
-}
-
 /*# sourceMappingURL=contact.css.map */
