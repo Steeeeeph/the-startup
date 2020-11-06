@@ -1,5 +1,17 @@
+.nav-item {
+  padding: 5px 25px 0 0;
+  font-size: large;
+  font-weight: 800;
+}
+
 h1, h2 {
   font-family: 'Paytone One', sans-serif;
+}
+
+q {
+  font-family: 'Parisienne', cursive;
+  font-size: 3em;
+  font-style: italic;
 }
 
 .google {
@@ -9,10 +21,10 @@ h1, h2 {
           justify-content: center;
 }
 
-#googleMap {
+iframe {
   -webkit-box-shadow: 0 5px 10px lightgray;
           box-shadow: 0 5px 10px lightgray;
-  width: 80vw;
+  width: 100%;
   height: 400px;
 }
 
@@ -21,7 +33,23 @@ iframe {
 }
 
 .row {
-  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+}
+
+label {
+  margin-top: 1.5em;
+}
+
+textarea {
+  width: 100%;
+}
+
+#copyright {
+  margin-top: 20px;
 }
 
 .logo-footer {

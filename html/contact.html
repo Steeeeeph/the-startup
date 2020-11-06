@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontstyles -->
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- LESS -->
-    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    <script src="//cdn.jsdelivr.net/npm/less" ></script> -->
-    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- icons fontawesome -->
+    <script src="https://kit.fontawesome.com/1ae1532ba6.js" crossorigin="anonymous"></script>
+    <!--Landing page-->
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="icon" href="../images/popcorn.png">
     <title>How can we help you?</title>
 
     <!-- Style needs to be imported in seperate stylesheet -->
@@ -35,58 +39,88 @@
 </head>
 
 <body>
+    <!-- Insert landing page / navbar isn't matching the landing page-->
+    <header>
+        <nav class="m-5 nav navbar-expand-lg navbar-collapse-md-sm navbar-dark fixed-top justify-content-between">
+          <a class="navbar-brand" href="/html/index.html" alt="Homepage">
+            <img src="../images/logo.png">
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../html/shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/account.html">Order History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/contact.html">Contact</a>  
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <!-- Contact page -->
     <div class="jumbotron text-center">
         <h1>Contact</h1>
-        <q>Dolce far niente...</q>
+        <br>
+        <q>Il dolce far niente...</q>
     </div>
     <div class="container google">
         <div id="googleMap" class="row">
+            <div class="col-sm-12">
             <!--Google map embed-->
-            <iframe width="inherit" height="400px" frameborder="0" 
-            src="https://www.google.com/maps/embed/v1/search?q=BeCode%20Gent%2C%20Koningin%20Astridlaan%2C%20Ghent%2C%20Belgium&key=AIzaSyDVuy-xtjkrJ2UxI5g5Q7SaTheRMAd4kyI"
-            allowfullscreen></iframe>
+                <iframe width="100%" height="400px" frameborder="0" 
+                src="https://www.google.com/maps/embed/v1/search?q=BeCode%20Gent%2C%20Koningin%20Astridlaan%2C%20Ghent%2C%20Belgium&key=AIzaSyDVuy-xtjkrJ2UxI5g5Q7SaTheRMAd4kyI"
+                allowfullscreen></iframe>
+            </div>
         </div>
     </div>
     <!-- Bottom contact info -->
     <div class="container contact-info">
         <div class="row">
-            <div class="location col-sm-4">
-                <h2>Location</h2>
-                <address>
+            <div class="location col-xs-12 col-sm-6 col-md-4">
+                <h2><i class="fas fa-map-marker-alt"></i> Location</h2>
+                <address> <a href="https://goo.gl/maps/UCPWdBFcwCnkvPJc8">
                     Kon. Astridlaan 185 <br>
                     9000 Gent <br>
                     Belgium
+                </a>
                 </address>
             </div>
-            <div class="phone col-sm-4">
-                <h2>Phone</h2>
+            <div class="phone col-xs-12 col-sm-6 col-md-4">
+               <h2> <i class="fas fa-mobile"></i> Phone</h2>
                 <p><a href="tel:+32 456 789 012">+32 456 789 012</a></p>
             </div>
-            <div class="openinghours col-sm-4">
-                <h2>Opening Hours</h2>
+            <div class="openinghours col-xs-12 col-sm-6 col-md-4">
+                <h2><i class="far fa-clock"></i> Opening Hours</h2>
                 <p>Tue-Sun 17:00-11:00</p>
             </div>
         </div>
     </div>
 
     <div class="contact-form container">
-        <h2 class="row">Contact Form</h2>
+        <h2 class="row"><i class="fas fa-paper-plane"></i> Contact Form</h2>
         <form action="mailto:emailadress" target="confirmation" method="POST">
-            <div class="row">
-                <div class="form-group col-6">
+            <div class="form-inline row">
+                <div class="form-group col-md-12 col-lg-3">
                     <label for="name">What's your name?</label> <br>
                     <input type="text" name="name" id="name" placeholder="John/Jane Doe">
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-md-12 col-lg-9">
                     <label for="email">What's your e-mailadress?</label> <br>
                     <input type="text" name="email" id="email" placeholder="e-mail address"> <br>
                 </div>
             </div>
             <div class="row">
-                <div class="form-group">
+                <div class="form-group col-lg-12">
                     <label for="question">Questions or suggestions</label> <br>
-                    <textarea name="contact-form" id="email-content" cols="100%" rows="10" placeholder="State here your questions or suggestions"></textarea> <br>
-                    <button type="submit" class="btn btn-default">Send</button>
+                    <textarea name="contact-form" id="email-content" rows="10" placeholder="State here your questions or suggestions"></textarea> <br>
+                    <button type="submit" class="btn btn-outline-danger">Send</button> <!--doesn't go red?-->
                 </div>
             </div>
         </form>
@@ -94,7 +128,14 @@
         </div>
 
 
-<div class="jumbotron text-center"> <sup> &copy;</sup> <img style="height: 25px" class="logo-footer" src="logosimple.png" alt="BeCouch"> <sub>2020</sub> </div>
+<div class="jumbotron text-center"> 
+    <div class="text-center">
+        <a href="https://www.twitter.com"><img class="logos" src="../images/twitter.png" alt="twitter logo" width="40" height="40"></a>
+        <a href="https://www.instagram.com"><img class="logos" src="../images/instagram.png" alt="instagram logo" width="40" height="40"></a>
+        <a href="https://www.facebook.com"><img class="logos" src="../images/facebook.png" alt="facebook logo" width="40" height="40"></a>
+    </div>
+    <p id="copyright"><sup> &copy;</sup> <img style="height: 25px" class="logo-footer" src="/images/logo.png" alt="BeCouch"> <sub>2020</sub> </p> 
+</div>
 </body>
 
 </html>
