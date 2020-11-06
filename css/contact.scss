@@ -6,16 +6,16 @@
   }
 //
 
-h1, h2 {
+h1, h4 {
     font-family: 'Paytone One', sans-serif;
 }
 h1{
     font-size: 60px;
 }
-h2 {
+h4 {
     font-size: 25px;
 }
-h2.row {
+h4.row {
     margin-left: 0;
 }
 q {
@@ -47,6 +47,7 @@ iframe {
 }
 label {
     margin-right: 10px;
+    margin-top: 10px;
 }
 textarea{
     width: 100%;
@@ -60,6 +61,7 @@ textarea{
 //     color: red;
 //     padding: 20px 40px;
 //   }
+
 #copyright {
     margin-top: 20px;
 }
